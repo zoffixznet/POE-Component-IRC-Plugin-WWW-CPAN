@@ -1,0 +1,57 @@
+POE-Component-IRC-Plugin-WWW-CPAN
+
+This module is a L<POE::Component::IRC> plugin which uses
+L<POE::Component::IRC::Plugin> for its base. It provides interface to
+to L<http://search.cpan.org/> from IRC.
+It accepts input from public channel events, C</notice> messages as well
+as C</msg> (private messages); although that can be configured at will.
+
+The plugin has two "modes" of functionality. First mode
+is displaying information about
+specified module (this will be the first module found on
+L<http://search.cpan.org/> matching the input). The second mode, which
+is referred to as B<search command> throughout this documentation will
+list the names of modules from L<http://search.cpan.org/> which match
+your input. The C<search command> is triggered by starting your
+search query with C<'search '> word (which must be separated from
+the query itself by white-space).
+
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc POE::Component::IRC::Plugin::WWW::CPAN
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=POE-Component-IRC-Plugin-WWW-CPAN
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/POE-Component-IRC-Plugin-WWW-CPAN
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/POE-Component-IRC-Plugin-WWW-CPAN
+
+    Search CPAN
+        http://search.cpan.org/dist/POE-Component-IRC-Plugin-WWW-CPAN
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 Zoffix Znet
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
